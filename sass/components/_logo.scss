@@ -1,0 +1,34 @@
+.logo-link {
+    font-family: var(--secondary-font);
+    font-weight: var(--title-fw);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo-link-footer {
+    font-family: var(--secondary-font);
+    font-weight: var(--title-fw);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+.web {
+    color: var(--accent-color)
+}
+
+.studio {
+    color: #ffffff;
+}

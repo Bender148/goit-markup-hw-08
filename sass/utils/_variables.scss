@@ -1,0 +1,37 @@
+:root {
+    --main-font:  'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --main-text-color: #212121;
+    --addited-text-color: #757575;
+    --accent-color: #2196F3;
+    --accent-second-color: #188ce8;
+    --title-fw: 700;
+    --text-fw: 500;
+    --background-color: #2F303A;
+    --rare-text-color: #ffffff;
+    --border-color: #eeeeee;
+    --border-color-header: #ececec;
+    --icon-color: #AFB1B8;
+
+    --max-width: 1600px;
+    --margin: 0 auto; 
+    --transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// MAIN COLORS
+$white: #ffffff;
+$black: #000000;
+
+// MAIN FONTS
+$main-font: 'Roboto', sans-serif;
+$main-font-size: 14px;
+
+// FONT WEIGHT
+$main-weight: 400;
+$secondary-weight: 500;
+$main-title: 700;
+$main-heading: 900;
+
+// LETTER SPACING
+$main-ls: 0.03em;
+$heading-ls: 0.06em;
