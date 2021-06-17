@@ -1,6 +1,4 @@
 .contacts {
-    display: flex;
-    align-self: center;
     margin-left: auto;
 }
 
@@ -15,8 +13,8 @@
     letter-spacing: 0.02em;
     color: var(--addited-text-color);
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    //padding-top: 32px;
+    //padding-bottom: 32px;
 
     display: flex;
     align-items: center;
@@ -38,8 +36,8 @@
     letter-spacing: 0.02em;
     color: var(--addited-text-color);
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    //padding-top: 32px;
+    //padding-bottom: 32px;
 
     display: flex;
     align-items: center;
@@ -80,6 +78,22 @@
     }
 }
 
+//Tablet
+@media screen and (min-width: 768px) {
+    .contacts__mail-link,
+    .contacts__tel-link {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+//Desktop
+@media screen and (min-width: 1200px) {
+    .contacts__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+  
 
 
 

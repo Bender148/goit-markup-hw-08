@@ -1,6 +1,6 @@
 .social__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   
     margin-top: 16px;
 }
@@ -26,6 +26,7 @@
 
 .social__icon {
     fill: var(--icon-color);
+    transition: fill 250ms var(--transition);
 
     .social__links:hover &,
     .social__links:focus &{
@@ -36,8 +37,8 @@
 //FOOTER SOCIAL LINKS
 
 .footer__social-links {
-    margin-left: 70px;
-    
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .footer__social-title {
@@ -45,11 +46,13 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .footer__social-list {
     display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -63,6 +66,24 @@
     .footer__social-item:hover &,
     .footer__social-item:focus & {
         fill: var(--rare-text-color);
+    }
+}
+
+//Desktop
+@media screen and (min-width: 1200px) {
+    .social__list {
+        justify-content: space-around;
+    }
+  
+    //Footer-social-icons
+    .footer__social-links {
+        margin-left: 70px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+  
+    .footer__social-title {
+        text-align: left;
     }
 }
 

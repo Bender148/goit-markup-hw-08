@@ -1,6 +1,9 @@
 body {
     font-family: $main-font;
+    font-size: $main-font-size;
+    font-weight: $main-weight;
     color:var(--text-color);
+    letter-spacing: $main-ls;
 }
 
 h1,

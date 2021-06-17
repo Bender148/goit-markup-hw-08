@@ -1,34 +1,50 @@
-.logo-link {
-    font-family: var(--secondary-font);
-    font-weight: var(--title-fw);
+.logo {
+    color: $black;
+  
+    font-family: 'Raleway', sans-serif;
+    font-weight: $main-title;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+  
+    padding-top: 16px;
+    padding-bottom: 16px;
+  
+    &__dark {
+        color: $black;
+    }
+    &__decor {
+        color: var(--accent-color);
+    }
+    &__light {
+        color: $white;
+    }
+    .footer__address & {
+        margin-right: 0px;
+    }
 }
 
-.logo-link-footer {
-    font-family: var(--secondary-font);
-    font-weight: var(--title-fw);
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-
-    display: flex;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 20px;
+//Mobile
+@media screen and (min-width: 480px) {
+    .logo {
+        margin-right: 88px;
+    }
 }
-
-.web {
-    color: var(--accent-color)
+  
+//Tablet
+@media screen and (min-width: 768px) {
+    .logo {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
-
-.studio {
-    color: #ffffff;
+  
+//Desktop
+@media screen and (min-width: 1200px) {
+    .logo {
+        margin-right: 95px;
+    
+        .footer__address & {
+            margin-right: 95px;
+        }
+    }
 }
