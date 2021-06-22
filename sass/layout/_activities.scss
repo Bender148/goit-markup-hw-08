@@ -16,8 +16,8 @@
 
 .activities__img {
     position: relative;
-    margin-left: 30px;
 
+    margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
 }
 
@@ -33,8 +33,17 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 30px 0px 27px 0px;
+
+    padding: 27px 82px 27px 83px;
 
     color: var(--rare-text-color);
     background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (max-width: 1199px) {
+    .activities,
+    .activities__img-list,
+    .activities__img-list .section-title {
+        display: none;
+    }
 }

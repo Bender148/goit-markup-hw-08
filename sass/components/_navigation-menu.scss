@@ -86,7 +86,7 @@
 
 //Tablet
 @media screen and (min-width: 768px) {
-    .navigation-menu.contact {
+    .navigation-menu.contacts {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -94,7 +94,7 @@
 
 //Desktop
 @media screen and (min-width: 1200px) {
-    .navigation-menu.contact {
+    .navigation-menu.contacts {
         flex-direction: row;
         align-items: center;
         justify-content: center;

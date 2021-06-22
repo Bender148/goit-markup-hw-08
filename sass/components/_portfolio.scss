@@ -12,9 +12,34 @@
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    & img {
+        max-width: 100%;
+    }
 }
+
+.portfolio-img {
+    max-width: 100%;
+    margin-bottom: 30px;
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &-wraper {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.portfolio-link {
+    color: var(--addited-text-color);
+
+    &:hover .overlay,
+    &:focus .overlay {
+        transform: translateY(0);
+    }
+}
+
 .portfolio-description {
     padding: 20px 24px;
     border-right: solid 1px;
@@ -24,20 +49,10 @@
     border-color: var(--border-color);
 }
 
-.portfolio-img {
-    margin-top: 30px;
-    margin-left: 30px;
-
-    flex-basis: calc(100% / 3 - 30px);
-}
-
 .portfolio-img:hover { 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link {
-    color: var(--addited-text-color);
-}
 .branch {
     font-family: var(--main-font);
     font-weight: 400;
@@ -63,7 +78,7 @@
     left: 0;
     height: 100%;
 
-    padding: 64px 23px;
+    padding: 30px 23px;
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--rare-text-color);
 
@@ -71,8 +86,35 @@
     transition: transform 250ms var(--transition);
 }
 
+@media screen and (min-width: 480px) {
+    .overlay {
+        padding: 64px 23px;
+        font-size: 18px;
+    }
+}
+
 .portfolio-link:hover .overlay,
 .portfolio-link:focus .overlay {
     transform: translateY(0);
 }
 
+//Tablet
+@media screen and (min-width: 768px) {
+    .portfolio-list {
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+  
+    .portfolio-img {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+//Desktop
+@media screen and (min-width: 1200px) {
+    .portfolio-img {
+      flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+}

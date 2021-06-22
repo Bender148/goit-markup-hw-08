@@ -1,6 +1,6 @@
 .clients__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
 
@@ -11,8 +11,11 @@
 
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
 .clients__item {
@@ -23,9 +26,9 @@
     width: 170px;  
     height: 92px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .clients__link {
@@ -64,3 +67,26 @@
 /*.clients__link:focus .clients__icon {
     fill: var(--accent-color);
 }*/
+
+//Tablet
+@media screen and (min-width: 768px) {
+    .clients__item {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+}
+
+//Desktop
+@media screen and (min-width: 1200px) {
+    .clients__list {
+        flex-wrap: nowrap;
+    
+        margin-top: 0px;
+        margin-left: -30px;
+    }
+  
+    .clients__item {
+        flex-basis: calc((100% - 6 * 30px) / 1);
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+}

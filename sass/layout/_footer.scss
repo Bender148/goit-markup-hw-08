@@ -1,3 +1,7 @@
+.footer {
+    background-color: var(--background-color);
+}
+
 .footer__address {
     font-weight: 400;
     font-style: inherit;
@@ -5,7 +9,18 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--rare-text-color);
+    text-align: center;
+}
 
+.footer__about-address {
+    color: var(--rare-text-color);
+}
+
+.footer__contacts-list {
+    margin-top: 20px;
+}
+
+.footer__about-contacts:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -41,25 +56,15 @@
     }
 }
 
-.footer__contacts-list {
-    display: flex;
-    flex-direction: column;
-    width: 231px;
-    height: 81px;
-}
-
-.footer__about-contacts:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.footer__about-address {
-    color: var(--rare-text-color);
-}
-
-
 //SUBSCRIBE FORM
 .subscribe-form {
-    margin-left: 93px;
+    text-align: center;
+}
+
+.subscribe-form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .subscribe-form__title {
@@ -76,12 +81,9 @@
     margin-bottom: 20px;
 }
 
-.subscribe-form__container {
-    display: inline-flex;
-}
-
 .subscribe-form__input {
-    min-width: 338px;
+    width: 100%;
+    margin-bottom: 20px;
 
     padding-top: 15px;
     padding-bottom: 15px;
@@ -94,10 +96,6 @@
 
     transition: border-color 250ms var(--transition);
 
-    &::placeholder {
-        color: rgba(255, 255, 255, 0.6);
-    }
-    
     &:focus {
         outline: none;
         border-color: var(--accent-color);
@@ -107,11 +105,12 @@
 .subscribe-form__btn {
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-self: center;
 
     min-width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 12px;
 
     font-family: inherit;
     font-weight: var(--title-fw);
@@ -137,4 +136,46 @@
 .subscribe-form__icon {
     fill: var(--rare-text-color);
     margin-left: 10px;
+}
+
+//Tablet
+@media screen and (min-width: 768px) {
+    .footer__address {
+        margin-right: 165px;
+    }
+  
+    .subscribe-form {
+        margin-top: 60px;
+        width: 450px;
+    }
+}
+
+//Desktop
+@media screen and (min-width: 1200px) {
+    .footer__address {
+        text-align: left;
+        margin-right: 0px;
+    }
+  
+    //Subscribe-form
+    .subscribe-form {
+        text-align: left;
+        margin-top: 0px;
+        margin-left: 93px;
+    }
+  
+    .subscribe-form__container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+  
+    .subscribe-form__input {
+        min-width: 358px;
+        margin-bottom: 0px;
+    }
+  
+    .subscribe-form__btn {
+        margin-left: 12px;
+    }
 }
