@@ -30,6 +30,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+   
 }
 
 .mobile-menu__list {
@@ -69,7 +70,9 @@
 
 //Contacts-list
 .mobile-menu__contact-list {
-    margin-top: 150px;
+    position: absolute;
+    justify-content: space-between;
+    align-items: flex-end;
 }
   
 .mobile-menu__contact-item {
@@ -96,7 +99,7 @@
 .mobile-menu__social-list {
     display: flex;
     flex-wrap: wrap;
-  
+    
     margin-top: 64px;
   
     font-size: 18px;
@@ -135,7 +138,7 @@
   
     //Contact-list
     .mobile-menu__contact-list {
-        margin-top: 200px;
+        margin-top: 300px;
     }
   
     .mobile-menu__contact-link {

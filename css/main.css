@@ -156,7 +156,6 @@ img {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    max-width: var(--max-width);
   }
   .section-hero {
     padding-top: 200px;
@@ -724,7 +723,6 @@ img {
 
 .portfolio-img {
   max-width: 100%;
-  margin-bottom: 30px;
 }
 
 .portfolio-img:hover {
@@ -822,7 +820,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
 }
 
 .filters__buttons:not(:last-child) {
@@ -916,7 +914,9 @@ img {
 }
 
 .mobile-menu__contact-list {
-  margin-top: 150px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .mobile-menu__contact-item {
@@ -975,7 +975,7 @@ img {
     font-size: 40px;
   }
   .mobile-menu__contact-list {
-    margin-top: 200px;
+    margin-top: 300px;
   }
   .mobile-menu__contact-link {
     font-size: 34px;
