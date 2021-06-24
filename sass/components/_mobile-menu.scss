@@ -8,6 +8,10 @@
 
     z-index: 2;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 48px 40px;
 
     font-weight: $secondary-weight;
@@ -70,9 +74,9 @@
 
 //Contacts-list
 .mobile-menu__contact-list {
-    position: absolute;
-    justify-content: space-between;
-    align-items: flex-end;
+    //display: flex;
+    //flex-direction: column;
+    //@debug: space-between;
 }
   
 .mobile-menu__contact-item {
@@ -137,10 +141,6 @@
     }
   
     //Contact-list
-    .mobile-menu__contact-list {
-        margin-top: 300px;
-    }
-  
     .mobile-menu__contact-link {
         font-size: 34px;
     }
